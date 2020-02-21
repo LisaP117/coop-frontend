@@ -19,12 +19,10 @@
 </head>
 <body class="{{page.body-page-class}}">
     {% include skip-nav.html %}
-    <div class="coop-l-container">
-        {% include header.html %}
-        <main id="main" class="main">
-            {{ content }}
-        </main>
-    </div>
+    {% include header.html %}
+    <main id="main" class="main">
+      {{ content }}
+    </main>
     {% include feedback.html %}
     {% include footer.html %}
     <script src="https://code.jquery.com/jquery-1.12.1.min.js" integrity="sha256-I1nTg78tSrZev3kjvfdM5A5Ak/blglGzlaZANLPDl3I=" crossorigin="anonymous"></script>

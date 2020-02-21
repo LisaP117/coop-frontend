@@ -10,8 +10,8 @@ id: pattern-library
 {% for designPattern in site.data.contentful.spaces.design-system-content.designPattern %}
     {% if designPattern.title == 'Colour palette' %}
     <header>
-        <div class="coop-l-row">
-            <div class="coop-l-column coop-l-medium-7 coop-l-small-12 intro-box">
+        <div class="coop-l-grid">
+            <div class="coop-l-grid-item col-md-7 col-sm-12 intro-box">
                 <h1>{{ designPattern.title }}
                     <span class="status status--{{ designPattern.status }}">
                         <a href="/process.html" class="status__link">{{ designPattern.status }}</a>
@@ -36,8 +36,8 @@ id: pattern-library
 </div>
 <div class="ds-section-bg ds-section-bg--light">
     <div class="coop-l-container">
-        <div class="coop-l-row">
-            <div class="coop-l-column coop-l-all-12">
+        <div class="coop-l-grid">
+            <div class="coop-l-grid-item col-xs-12">
                 <section id="example" class="coop-ds-example">
                     <section id="example" class="coop-u-margin-resp-b-32-16">
                         {% include pattern-library/foundations/foundations-color/color.html %}
@@ -52,8 +52,8 @@ id: pattern-library
     </div>
 </div>
 <div class="coop-l-container">
-    <div class="coop-l-row">
-        <div class="coop-l-column coop-l-medium-7 coop-l-small-12">
+    <div class="coop-l-grid">
+        <div class="coop-l-grid-item col-md-7 col-sm-12">
             <section id="design-and-content" class="coop-u-margin-resp-b-32-16">
                 <h2>Design and content</h2>
                 <p>{{ designPattern.design_and_content_documentation | markdownify }}</p>
